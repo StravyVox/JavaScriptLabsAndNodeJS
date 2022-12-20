@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Давидовский Даниил</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styleLab6.css" rel="stylesheet" type="text/css">
+    <title>Document</title>
+    <script src="Lab6AJAX.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="header-horizontal">
+            <ul>
+                <li class="Text"><a href="D:\\Учеба\\FrontEnd\\Project\\index.html">Лабораторные работы</a></li>
+            </ul>   
+        </nav>
+    </header>
+    <main>
+        <form name="registerForm"   class="testzone" id="test">
+            <h2>Студент</h2>
+            <p class="TaskInfo">Релазивать CRUD операции с использованием технологии ajax для произвольной предметной области.<br>
+                 Реализовать сервер с помощью веб-фреймворка Express для приложений node.js.<br>
+                  Хранение данных организовать с помощью базы данных либо на стороне сервера.</p>
+            <div><input type="text" name = "name" maxlength="200" class="inputText" placeholder="Имя"></div>
+            <div><input type="text" name = "surname" maxlength="200" class="inputText" placeholder="Фамилия"></div>
+            <div><input type="text" name = "lastname" maxlength="200" class="inputText" placeholder="Отчество"></div>
+            <div><input type="text" name = "faculty" maxlength="200" class="inputText" placeholder="Факультет"></div>
+            <div><input type="text" name = "speciality" maxlength="200" class="inputText" placeholder="Специальность"></div>
+            <div><input type="text" name = "speciality" maxlength="200" class="inputText" id="StudentId" placeholder="Номер"></div>
+            <p><input type="button" class = "button" onclick="Add()" value="Добавить"></p>
+            <p><input type="button" class = "button" onclick="Redact()" value="Редактировать"></p>
+            <p><input type="button" class = "button" onclick="Delete()" value="Удалить"></p>
+            
+            <p><input type="button" class = "button" onclick="RecieveInfo()" value="Информация о студентe"></p>  
+            <p><input type="button" class = "button" onclick="AmountOfStudents()" value="Количество студентов в базе"></p>  
+            <div class="peopleArray"></div> 
+        </form>    
+    </main>
+</body>
+</html>

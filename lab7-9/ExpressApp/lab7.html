@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Давидовский Даниил</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styleLab7.css" rel="stylesheet" type="text/css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav class="header-horizontal">
+            <ul>
+                <li class="Text"><a href="D:\\Учеба\\FrontEnd\\Project\\index.html">Лабораторные работы</a></li>
+            </ul>   
+        </nav>
+    </header>
+    <main>
+        <div id="app" class="app">
+            <p class="TaskInfo">7	Перевод объёма информации. Предоставлять пользователю указать две величины объёма информации:<br>
+                 исходную и ту, в которую надо конвертировать<br> (например, байты в килобайты, гигабайты в мегабайты, терабайты в гигабайты).</p>
+            <div>
+                <input class="inputText" type="text" id="inputInfo" v-model="input">
+                <p>{{input}} {{inputS}} равняется {{ConvertInfo(input,inputValue,outputValue)}} {{outputS}}</p>
+            </div>
+            <div>
+                <select name="" id="inputSelect" v-model="inputValue" ref="inputSize">
+                    <option value="1" selected>Байт</option>
+                    <option value="2">Килобайт</option>
+                    <option value="3">Мегабайт</option>
+                    <option value="4">Гигабайт</option>
+                    <option value="5">Терабайт</option>
+                    <option value="6">Петабайт</option>
+                    <option value="7">Эксабайт</option>
+                </select>
+                <select name="" id="outputSelect" v-model="outputValue" ref="outputSize">
+                    <option value="1" selected>Байт</option>
+                    <option value="2">Килобайт</option>
+                    <option value="3">Мегабайт</option>
+                    <option value="4">Гигабайт</option>
+                    <option value="5">Терабайт</option>
+                    <option value="6">Петабайт</option>
+                    <option value="7">Эксабайт</option>
+                </select>
+            </div>
+            <p class="TaskInfo">Используя браузерное хранилище устройства (например, Locale Storage),<br>
+                 разработать TODO-лист для различных назначений (например, для организации списка задач),<br>
+                  реализовав интерфейс для CRUD-операций</p>
+            <div class="ToDoList">
+                <div class="InputForm">
+                    <input v-model="Description" class="inputText">
+                    <button @click="AddInfo">Добавить задачу</button>
+                </div>
+                <div id="InfoAbout">
+
+                </div>
+            </div>  
+        </div>
+        <div id="RotationInfo">
+            <h1>Невозможно отобразить в ландшафтном режиме</h1>
+        </div>  
+    </main>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+<script src="Lab7.js"></script>
+</html>

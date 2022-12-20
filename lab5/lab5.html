@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Давидовский Даниил</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styleLab5.css" rel="stylesheet" type="text/css">
+    <title>Document</title>
+    <script src="scriptLab5.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="header-horizontal">
+            <ul>
+                <li class="Text"><a href="D:\\Учеба\\FrontEnd\\Project\\index.html">Лабораторные работы </a></li>
+            </ul>   
+        </nav>
+    </header>
+    <main>
+        <div class="testzone" id="test">
+            <h2>Задание</h2>
+            <p class="TaskInfo">Подготовить json-файл, содержащий следующую информацию: <br>
+                1. ФИО студента<br>
+                2. Факультет<br>
+                3. Специальность<br>
+                4. Список дисциплин, по которым есть лабораторные работы (каждая дисциплина ¬¬– это объект, содержащий список лабораторных работ)<br>
+                Добавить возможность поиска лабораторных работ по дате
+                </p>
+            <p><input type="file" id = "FilePicker" class = "button" onclick="Connect()" value="Задание 1" accept=".json" value = "Загрузите Json"></p>
+            <div id="task1" class="t1"></div>
+            <p><input type="button" class = "button" onclick="FindByDate()" value="Нахождение оставшихся лабораторных работ" name="button2"></p>                
+            <div id="task2" class="t2"></div>
+        </div>        
+    </main>
+</body>
+</html>

@@ -1,0 +1,216 @@
+* {
+    margin:0;
+    padding:0;
+    font-family: 'Open Sans', sans-serif;
+}
+*:focus{
+    outline: none;
+}
+.TaskInfo{
+    color:white;
+    margin: 25pt 0 0 0;
+    font-size: 15pt;
+}
+#RotationInfo{
+    display:none;
+}
+.header-horizontal{
+    position: relative;
+    height: 55px;
+    background-color: #97ccf0;
+    box-shadow: 0 0 10px rgba(39, 39, 39, 0.5);
+}
+.Text a{
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    font-family: fantasy;
+    font-weight: 700;
+    color: white;
+    font-size: 1.5em;
+    padding-top: 8px;
+    font-family: 'Nanum Gothic', sans-serif;
+    text-decoration: none;
+}
+.Text a:visited{
+    text-decoration: none;
+    color: white;
+}
+.header-horizontal ul li{
+    color: white;
+}
+main{
+    background-color: #aaddff;
+    width: 100%;
+    height: 5000px;
+    display:flex;
+}
+.button{
+    margin-top: 15pt;
+    border: 1px solid;
+    padding: 10px 40px;
+    border-radius: 0.5em;
+    background-color: #97ccf0;
+    box-shadow: 3px 3px 3px 3px rgba(39, 39, 39, 0.1);
+    color: white;
+}
+.button:hover{
+    background-color: #74afda;
+}
+.inputText{
+  margin-top: 15pt;
+  border: 1px solid;
+  border-radius: 0.5em;
+  font-size: 20px;
+  width: 250px;
+}
+.inputAnagram{
+  margin-top: 15pt;
+  border: 1px solid;
+  border-radius: 0.5em;
+  font-size: 20px;
+}
+.app{
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+.app input{
+    border-color: white;
+    overflow: none;
+    color: #74afda
+}
+.app div{
+    margin: 15pt 0;
+}
+.app p{
+    margin: 15pt 0;
+    font-size: 15pt;
+}
+.app select{
+    padding: 5pt 10pt;
+    font-size: 15pt;
+    border-radius: 15pt;
+    border-color: white;
+    background-color: #97ccf0;
+    color: white;
+}
+.app select:hover{
+    background-color: #74afda;
+}
+.ToDoElement{
+    display: inline-block;
+
+}
+.app button{
+    margin-top: 15pt;
+    border: 1px solid;
+    padding: 5px 10px;
+    border-radius: 0.5em;
+    background-color: #97ccf0;
+    box-shadow: 3px 3px 3px 3px rgba(39, 39, 39, 0.1);
+    color: white;
+}
+.app button:hover{
+    background-color: #74afda;
+}
+.app p:hover{
+    color:rgb(186, 186, 194);
+}
+.DeleteButton
+{
+    margin: 0 5pt;
+}
+/* Portrait */
+@media all 
+  and (max-width: 720px) 
+  and (max-height: 1560px) 
+  and (-webkit-device-pixel-ratio: 2) 
+  and (orientation: portrait) 
+{
+    .inputText{
+        margin-top: 15pt;
+        border: 1px solid;
+        border-radius: 0.5em;
+        font-size: 20px;
+        width: 150px;
+      }
+}
+
+/* Landscape */
+@media all 
+  and (max-width: 1560px) 
+  and (max-height: 720px) 
+  and (-webkit-device-pixel-ratio: 2) 
+  and (orientation: landscape) 
+{
+
+.inputText{
+    margin-top: 15pt;
+    border: 1px solid;
+    border-radius: 0.5em;
+    font-size: 20px;
+    width: 150px;
+  }
+  #app{
+    display: none;
+  }
+  #RotationInfo{
+    display: block;
+    width: 100%;
+    text-align: center;
+    color: white;
+    padding: 15pt 0;
+  }
+}
+@media (prefers-color-scheme: dark){
+
+    .header-horizontal{
+        background-color: #a6a6a7;
+        box-shadow: 0 0 10px rgba(39, 39, 39, 0.5);
+    }
+    #RotationInfo{
+        color: rgb(186, 186, 194);
+      }
+    .app select{
+        border-color: rgb(186, 186, 194);;
+        background-color: #5f5f66;
+        color: rgb(186, 186, 194);;
+    }
+    .app button{
+        background-color: #5f5f66;
+        color: rgb(186, 186, 194);
+    }
+    .app select:hover{
+        background-color: #393b3d;
+    }
+    .app button:hover{
+        background-color: #393b3d;
+    }
+    .app{
+        color: rgb(186, 186, 194);;
+    }
+    .app input{
+        border-color: rgb(186, 186, 194);;
+        color: #3a586e
+    }
+    .header-horizontal{
+        background-color: #313841;
+        box-shadow: 0 0 10px rgba(39, 39, 39, 0.5);
+    }
+    .Text a{
+        color: rgb(186, 186, 194);;
+    }
+    .Text a:visited{
+        color: rgb(186, 186, 194);;
+    }
+    .header-horizontal ul li{
+        color:rgb(186, 186, 194);;
+    }
+    main{
+        background-color: #23262b;
+    }
+    .inputText{
+        background-color: #c3c3c4;
+    }
+}

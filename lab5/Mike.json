@@ -1,0 +1,15 @@
+{"name":"Mike",
+"surname":"Altonio",
+"lastname":"Gustavo's",
+"faculty":"FAIS",
+"speciality":"HR",
+"Labs":[
+    {"name":"FrontEnd","data":"2022","mark":"10"},
+    {"name":"FrontEnd","data":"2023","mark":"5"},
+    {"name":"FrontEnd","data":"2024","mark":"5"},
+    {"name":"PSP","data":"2022","mark":"6"},
+    {"name":"JavaScript","data":"2023","mark":"2"},
+    {"name":"JavaScript","data":"2024","mark":"8"},
+    {"name":"Object Programming","data":"2022","mark":"9"},
+    {"name":"Object Programming","data":"2023","mark":"8"}]
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Давидовский Даниил</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styleLab3.css" rel="stylesheet" type="text/css">
+    <title>Document</title>
+    <script src="lab3.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="header-horizontal">
+            <ul>
+                <li class="Text"><a href="D:\Учеба\FrontEnd\Project\index.html">Лабораторные работы</a></li>
+            </ul>   
+        </nav>
+    </header>
+    <main>
+        <div class="testzone" id="test">
+            <h2>Задание</h2>
+            <p class="TaskInfo">Сгенерировать строку из случайных латинских букв. <br> 
+                Строку разбить на символы, каждый символ перевести в верхний регистр,<br> собрать массив из кодов этих символов, 
+                оставить только те коды, которые не делятся на 5 и посчитать сумму остатков деления этих кодов на 5. </p>
+            <p><input type="button" class = "button" onclick="firsttask()" value="Задание 1"name = "button1"></p>
+            <div class="task1"><input type="text" name = "inputText1" maxlength="200" class="inputText" placeholder="Случайные латинские символы"></div>
+            <div class="task1"><input type="text" name = "inputText1" maxlength="200" class="inputText"></div>
+            <div class="task1"><input type="text" name = "inputText1" maxlength="200" class="inputText"></div>
+            <p class="TaskInfo">Сгенерировать массив из 1000 случайных чисел в диапазоне s ± p%, отсортировать его по убыванию остатков от деления на 10. </p>
+            <p><input type="button" class = "button" onclick="secondtask()" value="Задание 2" name="button2"></p>                
+            <div class="t2"><input type="text" name = "inputText2" maxlength="200" class="inputText" value="5" ></div>
+            <div class="t2"><input type="text" name = "inputText2" maxlength="200" class="inputText" value="100"></div>
+            <div class="t2"><input type="text" name = "inputText2" maxlength="200" class="inputText" placeholder="Генерация массива"></div>
+            <div class="t2"><input type="text" name = "inputText2" maxlength="200" class="inputText"></div>
+            <p class="TaskInfo">Создать функцию, которая вернет: a. Среднее арифметическое своих аргументов b. Среднее гармоническое своих аргументов </p>
+            <p><input type="button" class = "button" onclick="thirdtask()" value="Задание 3" name="button2"></p>                
+            <div class="t2"><input type="text" name = "inputText3" maxlength="200" class="inputText" value="Array"></div>
+            <div class="t2"><input type="text" name = "inputText3" maxlength="200" class="inputText" value="Math array"></div>
+            <div class="t2"><input type="text" name = "inputText3" maxlength="200" class="inputText" value="Garm array"></div>
+            <p class="TaskInfo">Создать массив из списка имен.<br> Сгенерировать массив из 20 объектов типа «Человек». 
+                У каждого объекта должно быть случайным образом выбрано имя, возраст,
+                 а также метод, который выводит имя и возраст данного человека.<br> Прогнать методом обхода по этому массиву и заставить каждого человека представиться</p>
+            <p><input type="button" class = "button" onclick="forthtask()" value="Задание 4" name="button2"></p>                
+            <div class="peopleArray" id = "peopleArray"></div> 
+        </div>         
+    </main>
+</body>
+</html>

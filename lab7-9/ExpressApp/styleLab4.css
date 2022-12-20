@@ -1,0 +1,177 @@
+* {
+    margin:0;
+    padding:0;
+    font-family: 'Open Sans', sans-serif;
+}
+.header-horizontal{
+    position: relative;
+    height: 55px;
+    background-color: #97ccf0;
+    box-shadow: 0 0 10px rgba(39, 39, 39, 0.5);
+}
+.Text a{
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    font-family: fantasy;
+    font-weight: 700;
+    color: white;
+    font-size: 1.5em;
+    padding-top: 8px;
+    font-family: 'Nanum Gothic', sans-serif;
+    text-decoration: none;
+}
+.Text a:visited{
+    text-decoration: none;
+    color: white;
+}
+.header-horizontal ul li{
+    color: white;
+}
+main{
+    background-color: #aaddff;
+    width: 100%;
+    height: 5000px;
+    display:flex;
+}
+.testzone{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    
+}
+.testzone h2{
+    margin-top: 30pt;
+    color: white;
+}
+.button{
+    margin-top: 15pt;
+    border: 1px solid;
+    padding: 10px 40px;
+    border-radius: 0.5em;
+    background-color: #97ccf0;
+    box-shadow: 3px 3px 3px 3px rgba(39, 39, 39, 0.1);
+    color: white;
+}
+.button:hover{
+    background-color: #74afda;
+}
+.TextBooks{
+    color: white;
+}
+.peopleArray{
+    color: white;
+}
+.inputText{
+  margin-top: 15pt;
+  border: 1px solid;
+  border-radius: 0.5em;
+  font-size: 20px;
+  width: 500px;
+}
+.inputAnagram{
+  margin-top: 15pt;
+  border: 1px solid;
+  border-radius: 0.5em;
+  font-size: 20px;
+}
+.radioButtons {
+    margin-top: 15pt;
+	display: inline-block;
+	overflow: hidden;
+    color: white;
+}
+.form_radio_group_item {
+	display: inline-block;
+	float: left;    
+}
+.radioButtons input[type=radio] {
+	display: none;
+}
+.radioButtons label {
+	display: inline-block;
+	cursor: pointer;
+	padding: 0px 15px;
+	line-height: 34px;
+	border: 1px solid rgb(255, 255, 255);
+	border-right: none;
+	user-select: none;
+}
+ 
+.radioButtons .form_radio_group_item:first-child label {
+	border-radius: 6px 0 0 6px;
+}
+.radioButtons .form_radio_group_item:last-child label {
+	border-radius: 0 6px 6px 0;
+	border-right: 1px solid rgb(255, 255, 255);
+}
+ 
+/* Checked */
+.radioButtons input[type=radio]:checked + label {
+	background: #97ccf0;
+}
+ 
+/* Hover */
+.radioButtons label:hover {
+	color: rgb(184, 184, 184);
+    background-color:#aaddff;
+}
+ 
+/* Disabled */
+.radioButtons input[type=radio]:disabled + label {
+	background: #efefef;
+	color: rgb(255, 255, 255);
+}
+/*Checkbox */
+.checkboxButtons {
+    margin-top: 15pt;
+    color: white;
+}
+.checkboxButtons input[type="checkbox"] {
+    display: none;
+  }
+.checkboxButtons input[type="checkbox"] + label {
+    position: relative;
+    padding-top: 3px;
+    padding-left: 25px;
+    margin-bottom: 20px;
+    font: 14px/20px "Open Sans", Arial, sans-serif;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+  }
+.checkboxButtons input[type="checkbox"]:hover + label:hover {
+    color: rgb(111, 133, 185);
+  }
+.checkboxButtons input[type="checkbox"]:hover + label:before {
+    background: #97ccf0;
+    box-shadow: inset 0px 0px 0px 2px #f7f2f2;
+  }
+.checkboxButtons input[type="checkbox"] + label:last-child {
+    margin-bottom: 0;
+  }
+.checkboxButtons input[type="checkbox"] + label:before {
+    content: "";
+    width: 1.4em;
+    height: 1.4em;
+    border: 2px solid #97ccf0;
+    border-radius: 0.2em;
+    position: absolute;
+    left: 0;
+    top: 0;
+    -webkit-transition: all 0.2s, background 0.2s ease-in-out;
+    transition: all 0.2s, background 0.2s ease-in-out;
+    background: #f3f3f3;
+  }
+.checkboxButtons input[type="checkbox"]:checked + label:before {
+    width: 1.3em;
+    height: 1.3em;
+    border-radius: 0.2em;
+    border: 2px solid #fff;
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+    background: #97ccf0;
+    box-shadow: 0 0 0 1px rgb(255, 255, 255);
+}

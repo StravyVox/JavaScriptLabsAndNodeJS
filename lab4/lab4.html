@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Давидовский Даниил</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styleLab4.css" rel="stylesheet" type="text/css">
+    <title>Document</title>
+    <script src="lab4.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="header-horizontal">
+            <ul>
+                <li class="Text"><a href="D:\Учеба\FrontEnd\Project\index.html">Лабораторные работы</a></li>
+            </ul>   
+        </nav>
+    </header>
+    <main>
+        
+        <div class="testzone" id="test">
+            <h2>Задание</h2>
+            <p class="TaskInfo">Реализуйте класс Библиотека, в котором будет храниться коллекция объектов класса Издание.<br>
+                 Создайте классы-наследники для различных типов изданий с соответствующими полями (имя, год издания, тип, автор(ы) и т.д.).<br>
+                Предусмотреть возможность поиска издания по нескольким параметрам и их сортировки по автору.</p>
+            <p><input type="button" class = "button" onclick="Input()" value="Добавить книгу"name = "button1"></p>
+            <div class="radioButtons">
+                <div class="form_radio_group_item"> 
+                    <input type="radio" id="contactChoice1"name="contact" value="sport">
+                    <label for="contactChoice1">Sport</label>
+                </div>
+                <div class="form_radio_group_item"> 
+                    <input type="radio" id="contactChoice2" name="contact" value="cooking">
+                    <label for="contactChoice2">Cooking</label>
+                </div>
+                <div class="form_radio_group_item"> 
+                    <input type="radio" id="contactChoice3"name="contact" value="technical">
+                    <label for="contactChoice3">Technical</label>
+                </div>
+                <div class="form_radio_group_item"> 
+                    <input type="radio" id="contactChoice4"name="contact" value="other">
+                    <label for="contactChoice4">Other</label>
+                </div>
+            </div>
+            <p><input type="button" class = "button" onclick="Sort()" value="Отсортировать книги"name = "button1"></p>
+            <p><input type="button" class = "button" onclick="FindBook()" value="Поиск книги"name = "button1"></p>
+            <div class="checkboxButtons"> 
+                <input type="checkbox" id="Name1"name="contact" value="sport">
+                <label for="Name1">Name</label>
+            
+                <input type="checkbox" id="Author1" name="contact" value="cooking">
+                <label for="Author1">Author</label>
+            
+                <input type="checkbox" id="Data1"name="contact" value="technical">
+                <label for="Data1">Data</label>
+            </div>
+            <p><input type="button" class = "button" onclick="ShowBooks()" value="Показать книги"name = "button1"></p>
+            <div class="TextBooks" id="TextBooks"></div>
+        </div>         
+    </main>
+</body>
+</html>
