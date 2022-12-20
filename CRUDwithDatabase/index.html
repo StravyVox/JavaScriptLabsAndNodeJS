@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Давидовский Даниил</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styleLab.css" rel="stylesheet" type="text/css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav class="header-horizontal">
+            <ul>
+                <li class="Text">CRUD</li>
+            </ul>   
+        </nav>
+    </header>
+    <main>
+        <div id="app" class="app">
+            <div class="InfoToShow", id="ShowElement">
+            </div>
+            <form class="InfoSendForm">
+                <input type="text" placeholder="Name of product" class="inputText">
+                <input type="text" placeholder="Amount" class="inputText">
+                <input type="text" placeholder="Price" class="inputText">
+                <input type="text" placeholder="Producer" class="inputText">
+                <input type="button" class="button" value="Send Info" onclick="SendProduct()">
+            </form>
+            <input type="button" class="button" onclick="GetObjects()" value="GetAllObjects">
+            
+
+        </div>  
+    </main>
+</body>
+<script src="Client.js"></script>
+</html>
